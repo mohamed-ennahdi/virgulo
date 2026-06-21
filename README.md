@@ -12,7 +12,7 @@ Below a basic source code example:
 
 ```
 Engine engine = new CSVEngine.Builder(sqlConnection, selectQuery, destinationCSVFile).separator(';').build();
-File generatedXCSVFile = engine.generate();
+File generatedCSVFile = engine.generate();
 logger.info("Generated file: {}", generatedCSVFile);
 ```
 
