@@ -11,9 +11,9 @@ The objective of this framework is to quickly generate CSV files using SQL query
 Below a basic source code example:
 
 ```
-Engine engine = new CSVEngine.Builder(sqlConnection, selectQuery, destinationXLSFile).separator(';').build();
-File generatedXLSFile = engine.generate();
-logger.info("Generated file: {}", generatedXLSFile);
+Engine engine = new CSVEngine.Builder(sqlConnection, selectQuery, destinationCSVFile).separator(';').build();
+File generatedXCSVFile = engine.generate();
+logger.info("Generated file: {}", generatedCSVFile);
 ```
 
 ## Additions
